@@ -1,0 +1,392 @@
+<!-- Sidebar 
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#work-link" class="w3-bar-item w3-button">My Projects</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="./assets/" class="w3-bar-item w3-button">Resume</a>
+    </div> -->
+
+    <!-- Page Content 
+    <div class="w3-black">
+        <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+         Jumbotron Content 
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome!</h1>
+            <h4>My porfolio website</h4>
+    </div>
+</div>
+
+
+     Jumbotron Content -->
+    <!--  <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome!</h1>
+            <h4>My porfolio website</h4>-->
+
+    <!-- 
+  <div class="container">
+      <div class="navbar">
+          <nav>
+              <ul>
+                  <li><a href="index.html"><h1 class="logo">Slavic Ouchakov</h1></a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#work-link">My Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="./assets/">Resume</a></li> -->
+
+
+                  
+.container {
+	position: relative;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+  }
+  
+  .column{
+	  align-content: center;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+	align-content: center;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: black;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 5px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .row {
+	justify-content: center;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+
+
+
+
+
+
+  <section id="recent">
+        <!--heading--------------->
+        <div class="recent-heading">
+            <span>Recent</span>
+            <h3>Recent Project Design</h3>
+        </div>
+        <!--img--------------->
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/snippet2.PNG" style="width:100%" style="height:50%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/snippet1_still.JPG" style="width:100%" style="height:50%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/snippet3.PNG" style="width:100%" style="height:50%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/snippet_login.PNG" style="width:100%" style="height:50%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/snippet2.PNG" style="width:100%" style="border-right: 3px black;" onclick="currentSlide(1)"
+                        alt="Weather Page">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/snippet1_still.JPG" style="width:100%" onclick="currentSlide(2)"
+                        alt="Main Page">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/snippet3.PNG" style="width:100%" onclick="currentSlide(3)"
+                        alt="Calendar Page">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/snippet_login.PNG" style="width:100%" onclick="currentSlide(4)"
+                        alt="Calendar Page">
+                </div>
+            </div>
+
+
+
+
+
+
+            <section id="recent">
+        <!--heading--------------->
+        <div class="recent-heading">
+            <span>Recent</span>
+            <h3>Recent Project Design</h3>
+        </div>
+        
+<div class="container">
+    <div class="row">
+        <div class="column nature">
+            <div class="content">
+                <img src="images/snippet_costco.png" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="images/snippet_costco.png" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="images/snippet_costco.png" alt="Car" style="width:100%">
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="images/snippet_costco.png" alt="Car" style="width:100%">
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+                <!-- END GRID -->
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+            <div class="column">
+                <img src="images/snippet2.PNG" alt="Weather" style="width:100%" style="height:100%">
+            </div>
+            <div class="column">
+                <img src="images/snippet1_still.JPG" alt="Main" style="width:100%" style="height:100%">
+            </div>
+            <div class="column">
+                <img src="images/snippet3.PNG" alt="Calendar" style="width:100%" style="height:100%">
+            </div>
+        </div> -->
+
+        <!-- <div class="bg-image img1"></div>
+        <div class="bg-image img2"></div>
+        <div class="bg-image img3"></div>
+
+        <div class="bg-text">TEXT</div> -->
+        <!-- <div class="recent-img">
+            <img src="images/snippet1_still.jpg"/>	
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="images/snippet_costco.png" alt="Mountains" style="width:100%">
+        <h4>Mountains</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="images/snippet_costco.png" alt="Lights" style="width:100%">
+        <h4>Lights</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+        <img src="images/snippet_costco.png" alt="Car" style="width:100%">
+        <h4>Retro</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="images/snippet_costco.png" alt="Car" style="width:100%">
+        <h4>Fast</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+
+
+
+
+
+
+  <!-- <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/snippet1_still.jpg">
+                <img src="images/snippet1_still.jpg" alt="Project 1" width="600" height="400" id="proImg">
+              </a>
+              <div class="desc">Project 1 - Plan Surfing - The ultimate organization application.</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="images/snippet_Ottawa.PNG">
+                <img src="images/snippet_Ottawa.PNG" alt="Forest" width="600" height="400" id="proImg">
+              </a>
+              <div class="desc">Project 2 - Ottawa Field Booking System - Book a field anywhere, anytime.</div>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div> -->
+          
+        
+        
+        
+        
+        
+        
+        <!-- <div class="recent-heading">
+            <span>Recent</span>
+            <h3>Recent Project Design</h3>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="images/code.jpg" alt="Coding">
+                    </div>
+                </div>
+            </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="images/code.jpg" alt="Coding">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="images/code.jpg" alt="Coding">
+                    </div>
+                </div>
+            </div> -->
