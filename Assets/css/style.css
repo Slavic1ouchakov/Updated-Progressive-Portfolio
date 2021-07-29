@@ -687,5 +687,10 @@ display:block;}
 	transition: all ease 0.2s;
 }
 
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
 
   
