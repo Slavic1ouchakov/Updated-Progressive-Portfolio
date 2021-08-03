@@ -38,7 +38,16 @@ tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
-function changeMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+			localStorage.setItem('theme', sheet)
+		}
+
+
+

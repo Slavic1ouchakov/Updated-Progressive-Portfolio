@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/51dee5fe06.js" crossorigin="anonymous"></script>
+    <link id="mystylesheet" rel="stylesheet" type="text/css" href="Assets\css\light.css">
+    <link id="mystylesheet" rel="stylesheet" type="text/css" href="Assets\css\dark.css">
 </head>
 
 <body>
@@ -27,7 +29,8 @@
                 <li><a href="#recent">My Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="./assets/">Resume</a></li>
-                <li><button onclick="changeMode()">Toggle dark mode</button></li>
+                <li><button class="btn btn-light" onclick="swapStyle('Assets/css/light.css')">Light Mode</button></li>
+                <li><button class="btn btn-dark" onclick="swapStyle('Assets/css/dark.css')">Dark Mode</button></li>
             </ul>
             <!-- Hello -->
             <!-- <a href="#" class="hello">Hello!</a> -->
@@ -143,7 +146,8 @@
 
         <div class="row">
             <div class="column">
-                <img src="Assets/images/snippet1_still.jpg" alt="Forest" width="100" height="500" id="proImg" style="border: black 3px;">
+                <img src="Assets/images/snippet1_still.jpg" alt="Forest" width="100" height="500" id="proImg"
+                    style="border: black 3px;">
                 <div class="desc">Project 1 - Plan Surfing - The ultimate organization application.</div>
                 <a href="https://hakeem235.github.io/Plan-surfing/" class="recent-btn"
                     style="justify-content: center">View Design</a>
